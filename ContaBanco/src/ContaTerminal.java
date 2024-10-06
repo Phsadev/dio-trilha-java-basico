@@ -15,9 +15,13 @@ public class ContaTerminal {
         System.out.println("\nDigite o nome do cliente: ");
         String nomeCliente = scanner.nextLine();
 
-        double saldo = 1500.00;
+        System.out.println("\nQual valordeseja depositar? ");
+        double valorDeposito = scanner.nextDouble();
+        scanner.nextLine();
 
-        System.out.println("\nOlá " + nomeCliente + " , obrigado por criar uma conta em nosso banco. Sua agência é a " + numeroAgencia + ", conta " + numeroConta + " e seu saldo " + saldo + " já está disponível para saque.\n");
+        double valorSaldo = valorDeposito;
+
+        System.out.println("\nOlá " + nomeCliente + " , obrigado por criar uma conta em nosso banco. Sua agência é a " + numeroAgencia + ", conta " + numeroConta + " e seu saldo " + valorSaldo + " já está disponível para saque.\n");
 
     }
 }
